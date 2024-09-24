@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="198dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginBottom="115dp"
+        android:text="Upload from Photos"
+        android:textColor="#FDFFFF"
+        android:textColorHighlight="#FFEB3B"
+        android:textColorLink="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/predict"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/capture"
+        android:layout_width="198dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginBottom="115dp"
+        android:text="Capture a plant leaf image"
+        android:textColor="#FDFFFF"
+        android:textColorHighlight="#FFEB3B"
+        android:textColorLink="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/predict"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginLeft="200dp"/>
+
+    <Button
+        android:id="@+id/predict"
+        android:layout_width="411dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="29dp"
+        android:text="Predict Disease"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capture"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/plantImage"
+        android:layout_width="292dp"
+        android:layout_height="299dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="368dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="27dp"
+        android:text="Result:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plantImage" />
+
+    <TextView
+        android:id="@+id/result1"
+        android:layout_width="366dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="26dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <TextView
+        android:id="@+id/result2"
+        android:layout_width="373dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="22dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
